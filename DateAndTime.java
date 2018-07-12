@@ -5,9 +5,9 @@ import java.util.Date;
 public class DateAndTime { //это тоже подсмотрел у коллеги. Представляет собой два статических, глобальных метода (static для удобства),
 // преобразующийх строку в дату и наоборот
 
-    static SimpleDateFormat transformDateToString(Date date){
+    static String transformDateToString(Date date){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        return simpleDateFormat;
+        return simpleDateFormat.format(date);
     }
 
     static Date transformStringToDate(String stringADate) throws ParseException{
