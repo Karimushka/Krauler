@@ -2,7 +2,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DateAndTime { //это тоже подсмотрел у коллеги. Представляет собой два статических, глобальных метода (static для удобства),
+public class DateAndTime { // Представляет собой два статических, глобальных метода (static для удобства),
 // преобразующийх строку в дату и наоборот
 
     static String transformDateToString(Date date){

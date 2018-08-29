@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.regex.Pattern;
 
-public class MyParsing { // Систему и класс парсинга я нагло спер у коллеги. Да Простит он меня за это.
+public class MyParsing {
 
     private List<String> excludeWords = new ArrayList<>(Arrays.asList("или", "но", "что", "чтобы", "от", "ну", "ни",
             "ко", "со", "во", "на", "из", "за", "по", "не", "для", "под", "около", "если", "да", "нет", "перед",
@@ -31,7 +31,7 @@ public class MyParsing { // Систему и класс парсинга я н�
         return mapOfWords;
     }
 
-    /*private Map <String, Integer> transformListToMap(List <String> list){ // благодаря стриму мы избежали доп.метода, что, пожалуй, хорошо.
+    /*private Map <String, Integer> transformListToMap(List <String> list){
         Map <String, Integer> map = new HashMap<>();
         int count = 0;
         for (String str : list){
